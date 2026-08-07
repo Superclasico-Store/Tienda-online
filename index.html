@@ -1,143 +1,112 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tienda Online - Boca y River</title>
+<title>Superclásico Store</title>
 
-<style>
-body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#f5f5f5;
-}
+<link rel="stylesheet" href="style.css">
 
-header{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-header h1{
-    margin:0;
-}
-
-nav{
-    background:#0047AB;
-    text-align:center;
-    padding:10px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:15px;
-    font-weight:bold;
-}
-
-.banner{
-    background:linear-gradient(90deg,#0033A0,#FFD700,#D50032);
-    color:white;
-    text-align:center;
-    padding:50px 20px;
-}
-
-.productos{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-    padding:20px;
-}
-
-.card{
-    background:white;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,.2);
-    padding:15px;
-    text-align:center;
-}
-
-.card img{
-    width:100%;
-    border-radius:10px;
-}
-
-.precio{
-    color:green;
-    font-size:22px;
-    font-weight:bold;
-}
-
-button{
-    background:#25D366;
-    color:white;
-    border:none;
-    padding:12px 20px;
-    border-radius:8px;
-    cursor:pointer;
-    font-size:16px;
-}
-
-footer{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:20px;
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
 
 <header>
 
-<img src="1781525261817 (1).png"
-     alt="Logo Superclásico Store"
-     style="width:170px; border-radius:50%; display:block; margin:0 auto 15px;">
+<div class="logo">
+<img src="logo.png" alt="Superclásico Store">
+</div>
 
-<h1>SUPERCLÁSICO STORE</h1>
+<nav>
 
-<p>La pasión por el fútbol, con estilo y calidad.</p>
+<a href="#">Inicio</a>
+
+<a href="#">Boca</a>
+
+<a href="#">River</a>
+
+<a href="#">Accesorios</a>
+
+<a href="#">Contacto</a>
+
+</nav>
 
 </header>
 
+<section class="hero">
 
-<nav>
-<a href="#">Inicio</a>
-<a href="#">Boca</a>
-<a href="#">River</a>
-<a href="#">Contacto</a>
-</nav>
+<div class="overlay">
 
-<section class="banner">
-<h2>¡Bienvenido!</h2>
-<p>Encontrá camisetas, shorts, conjuntos y mucho más.</p>
+<h1>SUPERCLÁSICO STORE</h1>
+
+<p>Indumentaria y accesorios premium para los verdaderos apasionados del fútbol.</p>
+
+<a href="#productos" class="boton">
+Explorar colección
+</a>
+
+</div>
+
 </section>
 
-<section class="productos">
+<section id="productos" class="productos">
+
+<h2>Productos Destacados</h2>
+
+<div class="cards">
 
 <div class="card">
-<img src="https://via.placeholder.com/300x300?text=Producto+1">
+
+<img src="https://via.placeholder.com/300x300">
+
 <h3>Camiseta Boca</h3>
-<p class="precio">$35.000</p>
-<button>Consultar por WhatsApp</button>
+
+<p>$49.990</p>
+
+<button>Comprar</button>
+
 </div>
 
 <div class="card">
-<img src="https://via.placeholder.com/300x300?text=Producto+2">
+
+<img src="https://via.placeholder.com/300x300">
+
 <h3>Camiseta River</h3>
-<p class="precio">$35.000</p>
-<button>Consultar por WhatsApp</button>
+
+<p>$49.990</p>
+
+<button>Comprar</button>
+
+</div>
+
+<div class="card">
+
+<img src="https://via.placeholder.com/300x300">
+
+<h3>Campera</h3>
+
+<p>$79.990</p>
+
+<button>Comprar</button>
+
+</div>
+
 </div>
 
 </section>
 
 <footer>
-© 2026 Tienda Online - Todos los derechos reservados.
+
+<p>© 2026 Superclásico Store</p>
+
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
